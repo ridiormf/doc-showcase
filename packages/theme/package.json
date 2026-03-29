@@ -1,0 +1,19 @@
+{
+  "name": "@component-docs/theme",
+  "version": "1.0.0",
+  "description": "Theming system for component documentation",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  }
+}

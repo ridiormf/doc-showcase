@@ -1,0 +1,53 @@
+{
+  "name": "@component-docs/native-demo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "react-native start",
+    "start:clean": "react-native start --reset-cache",
+    "ios": "react-native run-ios",
+    "ios:simulator": "react-native run-ios --simulator 'iPhone 16'",
+    "ios:device": "react-native run-ios --device",
+    "ios:list": "react-native run-ios --list-devices",
+    "android": "react-native run-android",
+    "android:device": "react-native run-android --active-arch-only",
+    "android:list": "adb devices",
+    "pods": "cd ios && pod install && cd ..",
+    "pods:update": "cd ios && pod update && cd .."
+  },
+  "dependencies": {
+    "@component-docs/core": "workspace:*",
+    "@component-docs/native": "workspace:*",
+    "@component-docs/theme": "workspace:*",
+    "@react-native-picker/picker": "^2.11.0",
+    "react": "19.0.0",
+    "react-native": "0.78.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.2",
+    "@babel/runtime": "^7.25.2",
+    "@react-native-community/cli": "^14.1.2",
+    "@react-native-community/cli-platform-android": "^14.1.2",
+    "@react-native-community/cli-platform-ios": "^14.1.2",
+    "@react-native/assets-registry": "0.78.2",
+    "@react-native/babel-plugin-codegen": "0.78.2",
+    "@react-native/babel-preset": "0.78.2",
+    "@react-native/codegen": "0.78.2",
+    "@react-native/community-cli-plugin": "0.78.2",
+    "@react-native/debugger-frontend": "0.78.2",
+    "@react-native/dev-middleware": "0.78.2",
+    "@react-native/eslint-config": "0.78.2",
+    "@react-native/eslint-plugin": "0.78.2",
+    "@react-native/gradle-plugin": "0.78.2",
+    "@react-native/js-polyfills": "0.78.2",
+    "@react-native/metro-babel-transformer": "0.78.2",
+    "@react-native/metro-config": "0.78.2",
+    "@react-native/normalize-colors": "0.78.2",
+    "@react-native/typescript-config": "0.78.2",
+    "@react-native/virtualized-lists": "0.78.2",
+    "@types/react": "^19.0.0",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.4.5"
+  }
+}

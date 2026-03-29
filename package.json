@@ -1,0 +1,33 @@
+{
+  "name": "component-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Component documentation library for React and React-Native — no Expo required",
+  "scripts": {
+    "web": "pnpm --filter @component-docs/web-demo dev",
+    "ios": "pnpm --filter @component-docs/native-demo ios",
+    "ios:sim": "pnpm --filter @component-docs/native-demo ios:simulator",
+    "ios:device": "pnpm --filter @component-docs/native-demo ios:device",
+    "android": "pnpm --filter @component-docs/native-demo android",
+    "android:device": "pnpm --filter @component-docs/native-demo android:device",
+    "metro": "pnpm --filter @component-docs/native-demo start",
+    "metro:clean": "pnpm --filter @component-docs/native-demo start:clean",
+    "pods": "pnpm --filter @component-docs/native-demo pods",
+    "build": "pnpm -r --filter './packages/**' build",
+    "build:all": "pnpm -r build",
+    "type-check": "pnpm -r type-check",
+    "clean": "pnpm -r clean"
+  },
+  "keywords": [
+    "component-library",
+    "documentation",
+    "react",
+    "react-native",
+    "storybook-alternative"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

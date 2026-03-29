@@ -1,0 +1,48 @@
+# ── Dependencies ────────────────────────────────────────────────────────────
+node_modules/
+
+# ── Build outputs ────────────────────────────────────────────────────────────
+dist/
+build/
+*.tsbuildinfo
+
+# ── Test coverage ────────────────────────────────────────────────────────────
+coverage/
+
+# ── Environment / secrets ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Logs ────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── macOS ───────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Expo (not used here, but safe) ──────────────────────────────────────────
+.expo/
+.expo-shared/
+
+# ── React Native / Android ──────────────────────────────────────────────────
+apps/native-demo/android/local.properties
+apps/native-demo/android/build/
+apps/native-demo/android/app/build/
+apps/native-demo/android/.gradle/
+
+# ── React Native / iOS ──────────────────────────────────────────────────────
+apps/native-demo/ios/build/
+apps/native-demo/ios/Pods/
+apps/native-demo/ios/*.xcworkspace/xcuserdata/
+apps/native-demo/ios/*.xcodeproj/xcuserdata/
+
+# ── Editor ──────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,22 @@
+# Android
+android/local.properties
+android/build/
+android/app/build/
+android/app/.cxx/
+android/.gradle/
+android/.idea/
+android/*.iml
+android/app/src/main/assets/index.android.bundle
+
+# iOS
+ios/build/
+ios/Pods/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
+ios/DerivedData/
+
+# Metro
+.metro-health-check*
+
+# Dependencies
+node_modules/

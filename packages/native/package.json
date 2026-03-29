@@ -1,0 +1,46 @@
+{
+  "name": "@component-docs/native",
+  "version": "1.0.0",
+  "description": "React Native UI components for component documentation — no Expo required",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "@react-native-picker/picker": ">=2.0.0",
+    "react": ">=18.0.0",
+    "react-native": ">=0.72.0"
+  },
+  "peerDependenciesMeta": {
+    "@react-native-picker/picker": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@component-docs/core": "workspace:*",
+    "@component-docs/theme": "workspace:*"
+  },
+  "devDependencies": {
+    "@react-native-picker/picker": "^2.11.0",
+    "@types/react": "^19.0.0",
+    "@types/react-native": "^0.73.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.5"
+  },
+  "keywords": ["component-docs", "documentation", "react-native", "mobile", "playground"],
+  "license": "MIT"
+}
